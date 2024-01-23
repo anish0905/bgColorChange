@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background:orange; 
+
+        }
+
+        div{
+            width: 25%;height: 50px;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            background-color: antiquewhite;
+        }
+        #a{
+          flex: 1;  background: red;
+        }
+ #b{
+   flex: 1; background: blue;
+}
+#c{
+  flex: 1;  background-color: green;
+}
+#d{
+  flex: 1;  background-color: yellow;
+}
+#e{
+  flex: 1;  background-color: gold;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <a onclick="bgChange(id)" id="a">red</a>
+        <a onclick="bgChange(id)" id="b">Blue</a>
+        <a onclick="bgChange(id)" id="c">green</a>
+        <a onclick="bgChange(id)" id="d">Yellow</a>
+        <a onclick="bgChange(id)" id="e">gold</a>
+    </div>
+
+    <script>
+        const bgChange=(id)=>{
+            document.body.style.background=document.getElementById(id).innerHTML;
+        }
+    </script>
+</body>
+</html>
